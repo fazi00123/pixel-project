@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://showmepreviews.com/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+
+    <link  rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Pixel rofile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="overflow-x-hidden">
+    
+    <!-- Navbar starts -->
+    <div class="px-[5%] py-[1%] flex justify-between items-center shadow-lg">
+        <div>
+            <a href=""><img src="img/Logo.png" alt="" class="h-[56px] w-[197px]" /></a>
+        </div>
+        <div class="hidden md:flex space-x-10 mt-3">
+            <a href="#" class="text-base text-[17px] Nohemir">
+                About Us
+            </a>
+            <a href="#" class="text-base text-[17px] Nohemir">
+                Services
+            </a>
+            <a href="#" class="text-base text-[17px] Nohemir">
+                Pricing
+            </a>
+            <div class="relative dropdown">
+                <button class="flex items-center text-base text-[17px] Nohemir">
+                    More
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg dropdown-content">
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 3</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block">
+            <button class="bg-gradient-to-r from-[#00B7FD] to-[#002C6D] rounded-lg py-2 px-6">
+                <a href="" class="text-white">Sign Up</a>
+            </button>
+        </div>
+        <button class="md:hidden flex items-center px-3 py-2 border rounded" id="nav-toggle">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0zM0 7h20v2H0zM0 11h20v2H0z" />
+            </svg>
+        </button>
+    </div>
+    <!-- Navbar ends -->
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden px-[5%]" id="nav-content">
+        <a href="#" class="block py-2 text-sm text-gray-700">About Us</a>
+        <a href="#" class="block py-2 text-sm text-gray-700">Services</a>
+        <a href="#" class="block py-2 text-sm text-gray-700">Pricing</a>
+        <div class="dropdown">
+            <button class="flex items-center w-full text-left py-2 text-sm text-gray-700">
+                More
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            <div class="pl-4 dropdown-content">
+                <a href="#" class="block py-2 text-sm text-gray-700">Option 1</a>
+                <a href="#" class="block py-2 text-sm text-gray-700">Option 2</a>
+                <a href="#" class="block py-2 text-sm text-gray-700">Option 3</a>
+            </div>
+        </div>
+        <button class="bg-gradient-to-r from-[#00B7FD] to-[#002C6D] rounded-lg py-2 px-6 mt-4">
+            <a href="" class="text-white">Sign Up</a>
+        </button>
+    </div>
+    <!-- Navbar ends -->
+
+    <!-- HeroSection starts -->
+    <div class="pt-[4%] px-[17%] text-center">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <h1
+                class="text-[26px] leading-[36px] md:text-[32px] md:leading-[42px] lg:text-[44px] lg:leading-[55px] xl:text-[52px] xl:leading-[62px] Nohemi">
+                Simplify Your Business Card<br />
+                with <span
+                    class="xl:text-[83px] xl:leading-[99px] font-[Nohemi] font-[500] text-gradient">PixelProfile</span>
+            </h1>
+            <img src="img/Vector.png" alt=""
+                class="hidden md:hidden mt-4 md:mt-16 md:ml-[-70px] lg:mt-12 lg:ml-[-90px] xl:mt-12 xl:ml-[-36px]">
+        </div>
+        <p class="mt-2 xl:text-[20px] xl:leading-[31px] Nohemir">Create and share digital business
+            cards effortlessly with PixelProfile.<br />
+            Stand out from the crowd and leave a lasting impression.</p>
+        <div class="mt-5 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 ">
+            <button class="bg-gradient-to-r from-[#00B7FD] to-[#002C6D] rounded-lg py-2 px-8">
+                <a href="" class="text-white">Get Started</a>
+            </button>
+            <button class="border border-black rounded-lg py-2 px-8 ">
+                <a href="" class="">Learn More</a>
+            </button>
+        </div>
+    </div>
+    <!-- HeroSection ends -->
+
+    <!-- HeroSection images portion starts -->
+    <div class="mt-[15%] mx-[5%] bg-[url('./img/bg.png')] bg-no-repeat bg-center bg-cover rounded-2xl">
+        <div class="relative-container">
+
+            
+            <div class="absolute md:h-[400px] md:w-[400px] md:top-[-100px] md:left-[20%] lg:h-[500px] lg:w-[500px] lg:top-[-120px] lg:left-[25%] xl:top-[-130px] xl:left-[30%]"data-aos="fade-down"
+            data-aos-duration="2500"
+            data-aos-anchor-placement="bottom-bottom" >
+                <img src="img/perofileimg.png" alt="Profile Image">
+            </div>
+            <div
+                class="absolute top-[150px] h-[80px] w-[80px] md-h-[100px] md:w-[100px] md:top-[90px] md:left-[15%] lg-h-[120px] lg:w-[120px] lg:top-[100px] lg:left-[22%] xl:top-[80px] xl:left-[27%]" data-aos="fade-right"
+                data-aos-duration="2500"
+                data-aos-anchor-placement="bottom-bottom">
+                <img src="img/facebook.png" alt="Facebook">
+            </div>
+            <div
+                class="absolute top-[200px] left-[90px] h-[60px] w-[60px] md:h-[80px] md:w-[80px] md:top-[180px] md:left-[30%]  lg:h-[100px] lg:w-[100px] lg:top-[200px] lg:left-[35%] xl:top-[180px] xl:left-[40%]" data-aos="fade-up"
+                data-aos-duration="2500"
+                data-aos-anchor-placement="bottom-bottom">
+                <img src="img/insta.png" alt="Instagram">
+            </div>
+            <div
+                class="absolute top-[250px] left-[80%] h-[40px] w-[40px] md:h-[70px] md:w-[70px] md:top-[100px] md:left-[70%] lg:h-[90px] lg:w-[90px] lg:top-[100px] lg:left-[70%] xl:top-[100px] xl:left-[63%]" data-aos="fade-left"
+                data-aos-duration="2500"
+                data-aos-anchor-placement="bottom-bottom">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </div>
+            <div
+                class="absolute md:top-[200px] md:left-[70%] lg:top-[250px] lg:left-[73%] xl:top-[250px] xl:left-[63%]" data-aos="fade-up"
+                data-aos-duration="2500"
+                data-aos-anchor-placement="bottom-bottom">
+                <img src="img/Vectorwhite.png" alt="Vector">
+            </div>
+            <div class="pt-[20%] pb-[5%] px-[5%] md:flex lg:flex xl:flex justify-between">
+                <h1
+                    class=" Nohemi mt-64 text-[20px] md:mt-32 md:text-[40px] md:leading-[60px] lg:mt-15 lg:text-[50px] lg:leading-[70px] xl:text-[69px] xl:leading-[83px] text-white " data-aos="zoom-out-right"
+                    data-aos-duration="2500">
+                    Dive into the<br />
+                    digital World<br />
+                    wtih PixelProfile</h1>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-end pe-[10%] mt-[-23%]  md:mt-[-25%] lg:mt-[-18%] xl:mt-[-13%]"
+    data-aos="fade-up"
+    data-aos-duration="2800"
+     data-aos-anchor-placement="center-center">
+        <img src="img/wifi.png" alt="wifi image" class="mr-4 h-[100px] w-[100px] md:h-[254px] md:w-[248px] ">
+    </div>
+    <!-- HeroSection images portion ends -->
+
+    <!-- bussiness card start -->
+    <div class="px-[5%] py-[3%]  flex flex-col justify-center items-center lg:flex-row">
+        <div class="mt-20" data-aos="zoom-in-right" data-aos-duration="2500" ><img src="img/bussinessCard.png" alt="bussinessCard"></div>
+        <div class="px-[5%] xl:py-[10%]" data-aos="zoom-in-left" data-aos-duration="2500">
+            <h1
+                class="Nohemi text-[20px] md:mt-20 md:text-[24px] md:leading-[34px] lg:text-[32px] lg:leading-[43px] xl:text-[38px] xl:leading-[53px]">
+                Create and Share Digital <br />
+                Business Cards Effortlessly <br />
+                with PixelProfile</h1>
+            <p class="Nohemir text-[16px] lg:text-[18px] leading-[30px] mt-6">PixelProfile simplifies the process of
+                creating and sharing <br class="hidden lg:block" /> digital business cards, making it easier than ever
+                before. With <br class="hidden lg:block" /> our
+                user-friendly platform, you can design professional-<br class="hidden lg:block" />looking cards in
+                minutes and instantly share
+                them with your<br class="hidden lg:block" /> contacts. Stand out from the crowd and leave a lasting <br
+                    class="hidden lg:block" /> impression with
+                PixelProfile.
+            </p>
+        </div>
+    </div>
+    <!-- bussiness card ends -->
+
+    <!-- Digital Business Cards starts -->
+    <div class="flex flex-col lg:flex-row justify-center items-center p-[5%]">
+        <div class="max-w-lg" data-aos="zoom-in-right" data-aos-duration="2500">
+            <h1 class="Nohemi text-xl lg:text-4xl leading-tight lg:leading-snug">Simplify Sharing Digital Business
+                <br /> Cards Across Multiple Platforms
+            </h1>
+            <p class="Nohemir text-md leading-6 mt-6">With PixelProfile, sharing your digital business cards has never
+                <br class="hidden lg:block" /> been easier. Seamlessly share your contact information <br
+                    class="hidden lg:block" /> across various platforms with just
+                a few clicks.
+            </p>
+            <img src="img/HandIcon.png" alt="hand icon" class="mt-6">
+            <h2 class="Nohemi text-xl leading-tight my-4">Effortless Sharing</h2>
+            <p class="Nohemir text-md leading-6">Share your digital business cards effortlessly across <br
+                    class="hidden lg:block" /> multiple
+                platforms, reaching a wider audience.</p>
+            <img src="img/eyeIcon.png" alt="eye icon" class="mt-6">
+            <h2 class="Nohemi text-xl leading-tight my-4">Enhanced Visibility</h2>
+            <p class="Nohemir text-md leading-6">Increase your visibility by sharing your digital business <br
+                    class="hidden lg:block" /> cards
+                on popular social media platforms.</p>
+        </div>
+        <div class="" data-aos="zoom-in-left" data-aos-duration="2500">
+            <img src="img/mobile2.png" alt="Mobile">
+        </div>
+    </div>
+    <!-- Digital Business Cards ends -->
+
+<!-- about -->
+    <section>
+        <div class="flex flex-col lg:flex-row justify-between items-center xl:gap-16 lg:pt-16 xl:px-24 lg:px-14 px-5 lg:gap-10 ">
+            <div class="xl:w-1/2 lg:w-1/2" data-aos="fade-down-right" data-aos-duration="3000">
+                <img src="img/about.png" class="xl:w-full" alt="">
+            </div>
+            <div class="xl:w-1/2 lg:w-1/2 pt-4" data-aos="fade-down-left" data-aos-duration="3000">
+                <p class="xl:text-lg lg:text-lg text-sm text-black nohimiR">PixelProfile </p>
+                <h2 class="xl:text-[38px] lg:text-[28px] text-[23px] nohimi">Unlock Your Networking 
+                    Potential with PixelProfile</h2>
+                    <p class="text-black xl:leading-7 lg:leading-6 xl:pt-4 lg:pt-4 pt-4 xl:text-lg lg:text-base text-sm tracking-wider nohimiR">PixelProfile is the ultimate solution for creating and sharing digital business cards. With our user-friendly platform, you can easily create a professional and customizable digital business card that showcases your contact information, social media profiles, and more. Say goodbye to outdated paper business cards and hello to a modern and convenient way to network and promote your business.</p>
+
+                <div class="flex xl:pt-12 lg-pt-12 pt-8 items-center gap-4">
+                    <a href="" data-aos="zoom-in-down" data-aos-duration="2500">
+                    <button class="nohimi xl:text-[17px] lg:text-[17px] text-sm border border-black rounded-lg py-1 px-5 ">Learn More</button>
+                </a>
+                <a href="" data-aos="zoom-in-up" data-aos-duration="2500">
+                    <button class="nohimi  xl:text-[17px] lg:text-[17px] text-sm xl:pl-6 flex items-center xl:gap-4 lg:gap-4 gap-2">Sign up <img src="img/next.png" alt=""></button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="xl:pt-24 lg:pt-24 pt-12">
+        <div class="flex flex-col lg:flex-row justify-between lg:px-16 px-5">
+            <div>
+            <p class="xl:text-lg text-sm font-normal nohimi" data-aos="zoom-in-left" data-aos-duration="2500" >PixelProfile</p>
+            <h3 class="xl:text-[38px] text-2xl font-medium nohimi xl:pr-48 text-gradient " data-aos="zoom-in-right" data-aos-duration="2500">Create and Manage Your 
+                Digital Business Card</h3>
+                <div class="flex justify-center lg:justify-start pt-12 items-center">
+                    <a href="" data-aos="zoom-in-up" data-aos-duration="2500">
+                    <button class="nohimi xl:text-[17px] text-sm border border-black rounded-lg py-1 px-5">Get Started</button>
+                </a>
+                <a href="" data-aos="zoom-in-down" data-aos-duration="2500">
+                    <button class="nohimi xl:text-[15px] text-sm pl-6 flex items-center gap-4">Learn More <img src="img/next.png" alt=""></button>
+                </a>
+                </div>
+        </div>
+        <div class="flex justify-between pt-8 xl:pt-0 lg:pt-0">
+            <div class="flex items-center flex-col gap-3">
+                <img src="img/setting.png" data-aos="fade-right" data-aos-duration="2500" alt="">
+                <img src="img/arrow.png" data-aos="fade-left" data-aos-duration="2500" alt="">
+                <img src="img/click.png" data-aos="fade-right" data-aos-duration="2500" alt="">
+                <img src="img/arrow2.png" data-aos="fade-left" data-aos-duration="2500" alt="">
+                <img src="img/clock.png" data-aos="fade-right" data-aos-duration="2500" alt="">
+                <img src="img/arrow3.png" data-aos="fade-left" data-aos-duration="2500" alt="">
+                <img src="img/glass.png" data-aos="fade-right" data-aos-duration="2500" alt="">
+            </div>
+            <div class="">
+                <div class="xl:pl-16 pl-6" data-aos="zoom-in-left" data-aos-duration="2500">
+                    <h2 class="xl:text-[28px] text-lg font-medium nohimi">Easy Setup</h2>
+                    <p class="xl:text-lg text-[12px] font-normal nohimi">Follow our step-by-step guide to create and manage your digital business card.</p>
+                </div>
+                <div class="xl:pl-16 xl:pt-16 pl-6 pt-16 lg:pt-24" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <h2 class="xl:text-[28px] text-lg  font-medium nohimi">Effortless Sharing</h2>
+                    <p class="xl:text-lg text-[12px] font-normal nohimi">Share your digital business card with just a few <br class="xl:block lg:block hidden"> clicks.</p>
+                </div>
+                <div class="xl:pl-16 xl:pt-16 pl-6 pt-16 lg:pt-24" data-aos="zoom-in-left" data-aos-duration="2500">
+                    <h2 class="xl:text-[28px] text-lg font-medium nohimi">Real-time Updates</h2>
+                    <p class="xl:text-lg text-[12px] font-normal nohimi">Keep your contacts up to date with automatic real-time updates.</p>
+                </div>
+                <div class="xl:pl-16 xl:pt-16 pl-6 pt-16 lg:pt-24" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <h2 class="xl:text-[28px] text-lg font-medium nohimi">Analytics Insights</h2>
+                    <p class="xl:text-lg text-[12px]  font-normal nohimi">Track the performance of your digital business card with detailed analytics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<section class="xl:px-16 lg:px-10 xl:pt-24 pt-12 px-5">
+    <div class="flex bg-cover bg-no-repeat border rounded-[30px] bg-[url('./img/cardbg.png')]">
+        <div class=" xl:pl-24 xl:py-24 lg:py-16 lg:px-14 py-8 pl-4 ">
+        <div class="flex lg:gap-4 xl:gap-6">
+            <h3 class="text-white xl:text-[49px] lg:text-[30px] text-base nohimi" data-aos="zoom-in-left" data-aos-duration="2500" >Create Your Digital Business Card</h3>
+            <div>
+            <img src="img/star.png" class="w-1/2 xl:w-full xl:-mt-10 -mt-5" data-aos="zoom-in-down" data-aos-duration="2500"  alt="">
+        </div>
+        </div>
+            <p class="text-white  xl:text-[22px] lg:text-base text-[12px] xl:pt-8 lg:pt-4 nohimiR" data-aos="zoom-in-right" data-aos-duration="2500" >Join PixelProfile and easily create and share your professional digital <br class="hidden xl:block lg:block"> business card.</p>
+            <div class="flex  xl:pt-12 pt-8 items-center gap-3">
+                <a href="" data-aos="zoom-in-up" data-aos-duration="2500" >
+                <button class="bg-gradient-to-r from-[#00B7FD] to-[#002C6D] nohimiR  xl:text-[16px] text-[13px] rounded-lg py-1  xl:px-5 lg:px-4 px-3 text-white ">Sign Up</button>
+            </a>
+            <a href="" data-aos="zoom-in-down" data-aos-duration="2500" >
+                <button class="nohimiR  xl:text-[15px] text-[12px] flex items-center  xl:gap-4 border border-white rounded-lg py-1 px-4 text-white ">Learn More</button>
+            </a>
+            </div>
+        </div> 
+    </div>
+    <div class="flex justify-end  xl:-mt-[30%] lg:-mt-[30%] " data-aos="zoom-in-up" data-aos-duration="2500" >
+        <img src="img/card.png" class="w-1/2 xl:w-[560px] lg:w-[460px] hidden xl:block lg:block" alt="">
+    </div>
+</section>
+
+    <div class="text-center pt-8 px-5 xl:p-0 lg-px-0">
+        <h2 class="nohimi  xl:text-[26px] lg:text-[24px]">Trusted by companies of all sizes around the globe</h2>
+    </div>
+
+
+	<!-- slider -->
+<!-- Swiper -->
+<div  class="swiper mySwiper pt-8">
+    
+
+     <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/deexer1.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/music.png" alt=""></div>
+      <div class="swiper-slide">
+        <img src="img/platform.png" class="block platform-img" alt="">
+    
+    </div>
+      <div class="swiper-slide"><img src="img/ergo.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/platform.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/ergo.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/music.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/deexer1.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/ergo.png" alt=""></div>
+    </div>
+  </div>
+
+  <div dir="rtl" class="swiper mySwiper pt-4">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/deexer1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/music.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/platform.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/ergo.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/platform.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/ergo.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/music.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/deexer1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/ergo.png" alt=""></div>
+    </div>
+   
+  </div>
+  
+
+<!-- pricing option -->
+
+    <section class="pt-12" data-aos="zoom-in" data-aos-duration="2500">
+        <div class="text-center ">
+            <h3 class="text-gradient  xl:text-[44px] lg:text-[33px] nohimi">Pricing Options</h3>
+            <p class=" xl:text-[26px] lg:text-[20px] nohimiR">Choose the plan that suits your needs</p>
+        </div>
+    </section>
+
+<!--  uses radio buttons -->
+
+<section class="flex flex-row justify-center flex-wrap xl:m-8 pt-4">
+
+  <input id="tab-one" type="radio" name="tabs" class="peer/tab-one opacity-0 absolute" checked />
+  <label for="tab-one" class="text-white bg-white hover:bg-slate-200  peer-checked/tab-one:bg-gradient-to-r from-[#00B7FD] to-[#002C6D] cursor-default px-8 py-1 block rounded-lg border  border-black">
+    Monthly
+  </label>
+
+  <input id="tab-two" type="radio" name="tabs" class="peer/tab-two opacity-0 absolute" />
+  <label for="tab-two" class="bg-white border  border-black hover:bg-slate-200 peer-checked/tab-two:bg-gradient-to-r from-[#00B7FD] to-[#002C6D] cursor-default px-8 py-1 rounded-lg block">
+    Yearly
+  </label>
+  <div class="basis-full h-0"></div>
+
+  
+<!-- Monthly -->
+  <div class=" hidden peer-checked/tab-one:block xl:pt-14 pt-8 w-full">
+<div class="flex flex-col lg:flex-row justify-center xl:px-10 lg:px-8 px-5 xl:gap-6 lg:gap-4 gap-4"> 
+<!-- basic -->
+    <div class="bg-white border rounded-3xl  xl:w-1/2  xl:px-12 py-10 text-center xl:text-start" div data-aos="flip-left" data-aos-duration="2500">
+        <div class="flex justify-center xl:justify-start">
+        <img src="img/Icon.png" alt="">
+    </div>
+        <h2 class=" xl:text-[36px] text-xl  text-[#1B223C] nohimi pt-4 xl:pt-6">Basic</h2>
+        <p class=" text-[#797878]  xl:text-[20px] text-base nohimiR xl:pt-4">Unleash the Power of Your Business with Pro Plan.</p>
+        
+        <div class="flex justify-center xl:justify-start items-center  xl:gap-4 lg:gap-2 gap-2 pb-2">
+            <h2 class=" xl:text-[36px] text-2xl text-[#1B223C] nohimi pt-2">$34</h2>
+            <p class="text-[#797878]  xl:text-[20px] text-lg  nohimiR">per month</p>
+        </div><hr>
+        <div class="flex gap-3 pt-8 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Customizable digital business card </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Contact information management </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Analytics and insights </h3>
+        </div>
+        <div class="xl:pt-36 lg:pt-36 pt-24 text-center">
+     <a href="">
+        <button class=" nohimiR  xl:text-[24px] border border-black rounded-lg py-1  xl:px-32 px-16 text-[#1B223C] ">Get Started</button>
+    </a>
+</div>
+    </div>
+<!-- business -->
+    <div class="bg-white border rounded-3xl xl:w-1/2 xl:text-start xl:px-12 xl:py-10 py-10 bg-cover bg-no-repeat bg-[url('./img/bunessbg.png')] "  div data-aos="flip-left" data-aos-duration="2500">
+        <div class="flex justify-center xl:justify-start">
+        <img src="img/diamond.png" alt="">
+    </div>
+    <div class="flex justify-center xl:justify-start items-center gap-4 xl:pt-4 pt-4 ">
+        <h2 class=" xl:text-[36px] text-xl  text-[#1B223C] nohimi ">Business</h2>
+        <a href="">
+            <button class="nohimi xl:text-[17px] text-sm border border-black rounded-lg xl:px-3 px-2 py-1 ">Best offer</button>
+        </a>
+    </div>
+        <p class=" text-[#797878] text-center xl:text-start xl:text-[20px] text-base nohimiR xl:pt-4">Take Your Business to the Next Level with Business Plan.</p>
+        <div class="flex justify-center xl:justify-start items-center  xl:gap-4 lg:gap-2 gap-2 pb-2">
+            <h2  class=" xl:text-[36px] text-2xl text-[#1B223C] nohimi pt-2">$56</h2>
+            <p class="text-[#797878]  xl:text-[20px] nohimiR">per month</p>
+        </div><hr>
+        <div class="flex gap-3 pt-8 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">All Basic Plan features </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Advanced customization options </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Lead generation tools </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Integration with CRM systems </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Priority customer support </h3>
+        </div>
+        <div class="pt-12 text-center">
+     <a href="">
+        <button class=" nohimiR  xl:text-[24px] border border-black rounded-lg py-1   xl:px-32 px-16 text-white bg-black ">Get Started</button>
+    </a>
+</div>
+    </div>
+</div>
+  </div>
+
+
+<!-- Yearly -->
+  <div class=" hidden peer-checked/tab-two:block xl:pt-14 pt-8 w-full">
+    <div class="flex flex-col lg:flex-row justify-center xl:px-10 lg:px-8 px-5 xl:gap-6 lg:gap-4 gap-4">
+<!-- bassic -->
+    <div class="bg-white border rounded-3xl  xl:w-1/2  xl:px-12 py-10 text-center xl:text-start"  div data-aos="flip-left" data-aos-duration="2500">
+        <div class="flex justify-center xl:justify-start">
+        <img src="img/Icon.png" alt="">
+    </div>
+        <h2 class=" xl:text-[36px] text-xl  text-[#1B223C] nohimi pt-4 xl:pt-6">Basic</h2>
+        <p class=" text-[#797878]  xl:text-[20px] text-base nohimiR xl:pt-4">Unleash the Power of Your Business with Pro Plan.</p>
+        
+        <div class="flex justify-center xl:justify-start items-center  xl:gap-4 lg:gap-2 gap-2 pb-2">
+            <h2 class=" xl:text-[36px] text-2xl text-[#1B223C] nohimi pt-2">$34</h2>
+            <p class="text-[#797878]  xl:text-[20px] text-base  nohimiR">per year</p>
+        </div><hr>
+        <div class="flex gap-3 pt-8 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Customizable digital business card </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Contact information management </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Analytics and insights </h3>
+        </div>
+        <div class="xl:pt-36 pt-24 text-center">
+     <a href="">
+        <button class=" nohimiR  xl:text-[24px] border border-black rounded-lg py-1  xl:px-32 px-16 text-[#1B223C] ">Get Started</button>
+    </a>
+</div>
+    </div>
+<!-- business -->
+    <div class="bg-white border rounded-3xl xl:w-1/2 xl:text-start xl:px-12 xl:py-10 py-10 bg-cover bg-no-repeat bg-[url('./img/bunessbg.png')]"  div data-aos="flip-left" data-aos-duration="2500">
+        <div class="flex justify-center xl:justify-start">
+        <img src="img/diamond.png" alt="">
+    </div>
+    <div class="flex justify-center xl:justify-start items-center gap-4 xl:pt-4 pt-4 ">
+        <h2 class=" xl:text-[36px] text-xl  text-[#1B223C] nohimi ">Business</h2>
+        <a href="">
+            <button class="nohimi xl:text-[17px] text-sm border border-black rounded-lg xl:px-3 px-2 py-1">Best offer</button>
+        </a>
+    </div>
+        <p class=" text-[#797878] text-center xl:text-start xl:text-[20px] nohimiR xl:pt-4">Take Your Business to the Next Level with Business Plan.</p>
+        <div class="flex justify-center xl:justify-start items-center  xl:gap-4 lg:gap-2 gap-2 pb-2">
+            <h2  class=" xl:text-[36px] text-2xl text-[#1B223C] nohimi pt-2">$56</h2>
+            <p class="text-[#797878]  xl:text-[20px] nohimiR">per year</p>
+        </div><hr>
+        <div class="flex gap-3 pt-8 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">All Basic Plan features </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Advanced customization options </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Lead generation tools </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Integration with CRM systems </h3>
+        </div>
+        <div class="flex gap-3 pt-4 items-center">
+            <img src="img/Check.png" alt="">
+            <h3 class="nohimiR  xl:text-[20px] text-sm">Priority customer support </h3>
+        </div>
+        <div class="pt-12 text-center">
+     <a href="">
+        <button class=" nohimiR  xl:text-[24px] border border-black rounded-lg py-1 xl:px-32 px-16 text-white bg-black ">Get Started</button>
+    </a>
+</div>
+    </div>
+</div>
+  </div>
+</section>
+
+
+    <!-- search -->
+    <section class="xl:p-[5%] lg:p-[2%] py-[4%]" data-aos="zoom-in" data-aos-duration="2500">
+        <div class="bg-center bg-cover bg-no-repeat bg-[url('./img/subscrbbg.png')]">
+
+            <div class="flex flex-col lg:flex-row justify-between xl:px-16 lg:px-16 px-4 xl:py-20 lg:py-20 py-20 items-center ">
+                    <div>
+                        <h3 class="nohimi  xl:text-[32px] lg:text-[22px] text-base text-white">Subscribe to our Newsletter Today!</h3>
+                        <p class="nohimiR  xl:text-[17px] lg:text-sm text-[10px] text-white">Stay Updated with Our Newsletter!</p>
+                    </div>  
+                    <div class="pt-4 xl:pt-0 lg:pt-0">
+                        <div class="group md:w-80 lg:w-96 xl:w-96">
+                            <!-- <label for="8" class="inline-block w-full text-sm font-medium text-gray-500 transition-all duration-200 ease-in-out group-focus-within:text-blue-400">Outline button inline suffix</label> -->
+                            <div class="relative flex items-center">
+                            <input id="8" type="text" class="peer relative h-10 w-full rounded-lg bg-gray-50 pl-4 pr-20 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:drop-shadow-lg" placeholder="Eter Your Email"/>
+                            <button class="absolute right-0 h-10 xl:w-36 lg:w-36 w-24 rounded-r-md bg-gradient-to-r from-[#00B7FD] to-[#002C6D] nohimiR xl:text-[16px] lg:text-[16px] text-[12px] text-white">Search</button>
+                            </div>
+                        </div>
+                        <p class="text-white  xl:text-[13px] lg:text-sm text-[10px] pt-2">By clicking Sign Up, you confirm that you agree with <br class="hidden lg:block xl:hidden"> our Terms and Conditions.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+<!-- cards -->
+        <section class="xl:px-10 lg:px-8 px-5 py-10">
+            <div class="flex flex-col lg:flex-row justify-center gap-6">
+                <div class="shado bg-white rounded-3xl hover:border" data-aos="fade-right"
+                data-aos-duration="3000">
+                <div class="py-12 px-8">
+                    <img src="img/Email.png" alt="">
+                    <h2 class="text-gradient xl:text-[32px] lg:text-[24px] text-xl nohimi pt-6">Email</h2>
+                    <p class="xl:text-[13px] lg:text-sm text-sm nohimiR  pt-4">Have a question or need support? <br class="hidden lg:block xl:hidden"> Fill out the form <br class="hidden xl:block"> below and we'll get back to you as soon as possible.</p>
+                    <p class="xl:text-[13px] lg:text-sm text-sm nohimiR  pt-4">hello@pixleprofile.com</p>
+                </div>
+            </div>
+            <div class="shado bg-white rounded-3xl hover:border"  data-aos="fade-up"
+            data-aos-duration="3000" >
+                <div class=" py-12 px-8">
+                    <img src="img/phone.png" alt="">
+                    <h2 class="text-gradient xl:text-[32px] lg:text-[24px] nohimi pt-6 text-xl ">Phone</h2>
+                    <p class="xl:text-[13px] lg:text-sm text-sm nohimiR  pt-4">Feel free to give us a call if you have any questions or <br class="xl:block hidden"> need assistance.</p>
+                    <p class="xl:text-[13px] lg:text-sm text-sm nohimiR  pt-4">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="shado bg-white rounded-3xl hover:border"  data-aos="fade-left"
+            data-aos-duration="3000">
+                <div class=" py-12 px-8">
+                    <img src="img/map.png" alt="">
+                    <h2 class="text-gradient xl:text-[32px] lg:text-[24px] nohimi pt-6 text-xl ">Office</h2>
+                    <p class="xl:text-[13px] lg:text-sm text-sm nohimiR  pt-4">Visit our office during business hours to meet with our <br class="xl:block hidden"> team.</p>
+                    <p class="xl:text-[13px] lg:text-sm text-sm nohimiR  pt-4">123 Main Street, Sydney NSW 2000, Australia</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <footer class="bg-black">
+            <div class="px-8 lg:px-10 lg:py-8 xl:px-16 xl:py-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-16 md:gap-0 ">
+                    <div class="pt-32 md:pt-20">
+                        <img src="img/footerlogo.png" alt="footer logo">
+                    </div>
+                    <div class="pt-10 md:pt-0 text-center">
+                        <h3 class="nohimi text-[16px] xl:text-[22px] lg:text-[20px] text-white pt-4 xl:pt-8">About Us</h3>
+                        <a href="">
+                            <p class="nohimiR text-[12px] md:text-sm  text-white pt-4 hover:underline">Contact</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[12px] md:text-sm  text-white pt-4 hover:underline">FAQs</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[12px] md:text-sm  text-white pt-4 hover:underline">Support</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[12px] md:text-sm  text-white pt-4 hover:underline">Blog</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[12px] md:text-sm  text-white pt-4 hover:underline">Careers</p>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="nohimi text-[16px] xl:text-[22px] lg:text-[20px] text-white pt-4 xl:pt-8">Partners</h3>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Help Center</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Terms of Use</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Privacy Policy</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Cookie Policy</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Sitemap</p>
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="nohimi text-[16px] xl:text-[22px] lg:text-[20px] text-white pt-4 xl:pt-8">Resources</h3>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Press</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Events</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Case Studies</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Testimonials</p>
+                        </a>
+                        <a href="">
+                            <p class="nohimiR text-[10px] md:text-sm text-white pt-4 hover:underline">Features</p>
+                        </a>
+                    </div>
+                    <div class="col-span-2 md:col-span-2 lg:col-span-4 xl:col-span-1">
+                        <h3 class="nohimi text-18 xl:text-[22px] lg:text-[20px] text-white pt-4  xl:pt-8">Subscribe</h3>
+                        <p class="nohimiR text-[12px] md:text-sm text-white pt-4">Stay updated with our latest features and releases.</p>
+                        <div class="group w-64 md:w-72 lg:w-80 py-8">
+                            <div class="relative flex items-center w-[100%] md:w-[90%]">
+                                <input id="8" type="text"
+                                    class="peer relative h-10 w-full rounded-lg bg-gray-50 pl-4 pr-20 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:drop-shadow-lg"
+                                    placeholder="Enter Your Email" />
+                                <button
+                                    class="absolute right-0 h-10 w-24 rounded-r-md bg-gradient-to-r from-[#00B7FD] to-[#002C6D] nohimiR text-[16px] text-white">Join</button>
+                            </div>
+                        </div>
+                        <p class="nohimiR text-[12px] pb-4 md:pb-0 md:text-sm text-white">By subscribing, you agree to our Privacy Policy and consent to
+                            receive updates from our company.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="py-10 md:px-16 px-5">
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-8 items-center">
+                    <div class="col-span-1 md:col-span-1 xl:col-span-3">
+                        <p class="text-white text-[12px] md:text-sm xl:text-sm lg:text-sm nohimiR">© 2023 PixelProfile. All rights reserved.</p>
+                    </div>
+                    <div>
+                        <p class="text-white text-[12px] md:text-sm xl:text-sm lg:text-sm nohimiR">Privacy Policy</p>
+                    </div>
+                    <div>
+                        <p class="text-white text-[12px] md:text-sm xl:text-sm lg:text-sm nohimiR">Terms of Service</p>
+                    </div>
+                    <div>
+                        <p class="text-white text-[12px] md:text-sm xl:text-sm lg:text-sm nohimiR">Cookie Settings</p>
+                    </div>
+                    <div class="col-span-2 md:col-span-3 lg:col-span-1 xl:col-span-2 text-white flex justify-center lg:justify-end space-x-4">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+ <!-- js of hamburger -->
+ <script> document.getElementById("nav-toggle").onclick = function () {
+    var navContent = document.getElementById("nav-content");
+    if (navContent.classList.contains("hidden")) {
+        navContent.classList.remove("hidden");
+    } else {
+        navContent.classList.add("hidden");
+    }
+};
+
+document.querySelectorAll(".dropdown button").forEach((button) => {
+    button.onclick = function (e) {
+        e.preventDefault();
+        const dropdownContent = button.nextElementSibling;
+        dropdownContent.classList.toggle("hidden");
+    };
+});
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- slider -->
+<script>
+    var swiper2 = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  slidesPerView: 4,
+  //centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed:5000,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+$('.swiper-slide').hover(function(){
+  swiper2.autoplay.stop();
+}, function(){
+  swiper2.autoplay.start();
+});
+</script>
+
+        <script src="https://kit.fontawesome.com/d18210f659.js" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
+</body>
+</html>
